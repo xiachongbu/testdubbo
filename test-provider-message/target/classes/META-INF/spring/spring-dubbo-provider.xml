@@ -20,5 +20,5 @@
 	<dubbo:monitor address="${dubbo.monitor.address}"/>
 	<!-- 配置dubbo线程池 -->
 	<dubbo:provider timeout="${dubbo.provider.timeout}"
-					dispatcher="all" threadpool="fixed" threads="4"/>
+					dispatcher="all" threadpool="fixed" threads="4" token="true"/>
 </beans>
