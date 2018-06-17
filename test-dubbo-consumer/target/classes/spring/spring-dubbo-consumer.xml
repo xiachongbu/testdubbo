@@ -15,7 +15,6 @@
 		interface="testdubbo.service.IMessageService"
 		version="${dubbo.interface.version}" loadbalance="consistenthash" cluster="forking"
 	/>
-	<!--url="dubbo://192.168.28.98:9327/testdubbo.service.IMessageService"-->
 	<!-- 配置Dubbo监控程序的监控地址 -->
 	<dubbo:monitor address="${dubbo.monitor.address}"/>
 </beans>
