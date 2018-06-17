@@ -1,7 +1,7 @@
 package testdubbo.provider.service.impl;
 
 
-import org.springframework.stereotype.Service;
+import com.alibaba.dubbo.config.annotation.Service;
 import testdubbo.service.IMessageService;
 import testdubbo.vo.Message;
 

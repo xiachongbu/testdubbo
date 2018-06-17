@@ -1,6 +1,7 @@
 package testdubbo.consumer.test;
 
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import testdubbo.vo.Message;
 @ContextConfiguration(locations = {"classpath:spring/spring-*.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 public class TestMessageService {
-    @Autowired
+    @Reference
     private IMessageService messageService;
 
     @Test
